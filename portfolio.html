@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <!--Link para folha de estilo-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!--Nessa parte do codigo é onde começa o decorrer do codigo-->
+    <header>
+        <nav>
+            <!--Menu da página-->
+            <ul class="menu">
+                <li class="menuli"><a href="index.html">SobreMim</a></li>
+                <li class="menuli"><a href="formacao.html">Formação</a></li>
+                <li class="menuli"><a href="portfolio.html">Portfólio</a></li>
+                <li class="menuli"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="titulo-box">
+            <h1>Portfólio</h1>
+        </div>
+    </header>
+    <section>
+        <!--Conteudo da pagina, com meus projetos feito pela Uninter-->
+        <h2>Meus Projetos</h2>
+        <p>Aqui eu mostrarei alguns Projetos que fiz no curso da Uninter.</p>
+        <p>Estava em Python, mas transformei na linguagem JavaScript.</p>
+
+        <div class="projeto">
+            <!--Projeto Loja com/sem desconto-->
+            <h3>Bem-vindo à Loja do Emerson</h3>
+            <form id="lojaForm">
+                <!--Aqui é onde se insere o valores-->
+                <label for="valorUni">Entre com o valor do produto:</label><br>
+                <input type="number" id="valorUni" required><br>
+                <label for="quantidade">Entre com a quantidade do produto:</label><br>
+                <input type="number" id="quantidade" required><br><br>
+                <!--Ao clicar, enviará as informações para Js-->
+                <button type="button" onclick="calcularDesconto()">Calcular</button>
+            </form>
+            <!--O resultado do valor COM ou SEM desconto-->
+            <p id="resultadoSemDesconto"></p>
+            <p id="resultadoComDesconto"></p>
+        </div>
+        <div class="projeto">
+            <!--Projeto Loja de Geladinhos-->
+            <h3 class="titleCardapio">Bem-vindo a Loja de Gelados do Emerson</h3>
+            <img class="cardapio" src="./imgs/cardapio.png">
+            <form id="pedidoForm">
+                <!--Aqui digita o sabor desejado e o tamanho-->
+                <label for="sabor">Entre com o sabor desejado (AC/CP)</label><br>
+                <select id="sabor" required>
+                    <option value="AC">Açaí (AC)</option>
+                    <option value="CP">Cupuaçu (CP)</option>
+                </select>
+
+                <br>
+
+                <label for="tamanho">Escolha o tamanho:</label><br>
+                <select id="tamanho" required>
+                    <option value="P">Pequeno (P)</option>
+                    <option value="M">Médio (M)</option>
+                    <option value="G">Grande (G)</option>
+                </select>
+
+                <br>
+                <br>
+                
+                <!--Nesse botão, fazerá o calculo-->
+                <button type="button" onclick="adicionarPedido()">Adicionar ao Pedido</button>
+            </form>
+            <!--E entregará os resultados aqui-->
+            <p id="detalhesPedido"></p>
+            <p id="totalPedido"></p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Aluno Emerson. Todos os direitos reservados.
+    </footer>
+<!--Link para pasta com o arquivo Js-->
+    <script src="./Js/deconto.js"></script>
+    <script src="./Js/gelado.js"></script>
+</body>
+
+</html>

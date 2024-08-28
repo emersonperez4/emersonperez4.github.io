@@ -1,0 +1,130 @@
+/*=============Seção de Tags=================*/
+/*Uso o border box para qua nao haja problemas com a organização*/
+*{
+    box-sizing: border-box;
+}
+/*Modificação do html e body*/
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #7FA1C3, #E2DAD6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+/*CSS do menu*/
+nav{
+    background-color: #6482AD;
+    display: flex;
+    justify-content: center;
+}
+
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li.menuli{
+    margin: 0 50px;
+    padding: 0;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #7ca1d4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*CSS do section em bloco*/
+section{
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #a5a5a5;
+}
+/*Ajusta a imagem na tag section*/
+section img{
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+/*CSS do botão*/
+button {
+    background-color: #6482AD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7ca1d4;
+}
+/*CSS do footer*/
+footer{
+    background-color: #F5EDED;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+/*=============Seção de Classes=================*/
+/*Classe do Titulo-box*/
+.titulo-box{
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #a5a5a5;
+}
+/*Classe do titulo e h1*/
+.titulo-box h1{
+    margin: 0;
+    color: #333;
+}
+/*Classe do projeto (igual ao section)*/
+.projeto{
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    background-color: #e8e5e5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #a5a5a5;
+}
+/*Classe do Titulo do cardapio*/
+.titleCardapio{
+    margin: 0;
+}
+/*Classe do cardapio*/
+.cardapio{
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+}
